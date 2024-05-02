@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import "./style.css";
+import Header from "../components/utilities/Header";
+import { motion } from "framer-motion";
+import SocialMediaSticky from "@/components/utilities/SocialMediaSticky";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Header />
+        <SocialMediaSticky />
         {children}
       </body>
     </html>
