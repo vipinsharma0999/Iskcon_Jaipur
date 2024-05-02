@@ -1,5 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+<<<<<<< Updated upstream
+=======
+import "./style.css";
+import Header from "../components/utilities/Header";
+import { motion } from "framer-motion";
+import SocialMediaSticky from "@/components/utilities/SocialMediaSticky";
+>>>>>>> Stashed changes
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +18,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<<<<<<< Updated upstream
       <body className={inter.className}>{children}</body>
+=======
+      <body className={inter.className}>
+        <Header />
+        <SocialMediaSticky />
+        {children}
+      </body>
+>>>>>>> Stashed changes
     </html>
   );
 }

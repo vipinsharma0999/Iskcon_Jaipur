@@ -14,5 +14,9 @@ module.exports = {
       },
     },
   },
+<<<<<<< Updated upstream
   plugins: [],
+=======
+  plugins: [require("daisyui")],
+>>>>>>> Stashed changes
 };
