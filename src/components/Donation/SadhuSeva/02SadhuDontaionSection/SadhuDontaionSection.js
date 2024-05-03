@@ -63,8 +63,8 @@ export default function SadhuDonationSection() {
 
       {/* donation section start */}
       <div className=" flex flex-col items-center mb-[40px] ">
-        {feed.map((feed) => (
-          <>
+        {feed.map((feed, i) => (
+          <div key={i}>
             <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
               <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
                 <div className="pb-[1px]">
