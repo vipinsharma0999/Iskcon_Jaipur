@@ -91,7 +91,7 @@ export default function SadhuDonationSection() {
               </div>
             </div>
             <div className="border-b-[1px] w-3/4 border-yellow-400"></div>
-          </>
+          </div>
         ))}
       </div>
       {/* donation section end */}
