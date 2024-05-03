@@ -10,10 +10,9 @@ const SadhuSeva = () => {
     <>
       <MainPoster />
 
-      <div className="relative bg-[url('/HH.jpg')] bg-cover bg-center w-full">
+      <div className="relative bg-[url('/maxresdefault.jpg')] bg-cover bg-center w-full">
         <div
-          className="bg-transparent"
-          style={{ backgroundColor: "rgba(133, 28, 71, 0.81)" }}
+          style={{ backgroundColor: "#38002099" }}
         >
           <SadhuDonationSection />
           <SadhuCardSection />

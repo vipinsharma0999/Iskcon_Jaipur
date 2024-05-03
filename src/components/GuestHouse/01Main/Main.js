@@ -14,8 +14,8 @@ const dancing = Dancing_Script({
 
 export default function GuestHouseMain() {
   return (
-    <>
-      <div style={{clipPath: 'polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);'}} className="bg-[url('https://media.cntraveler.com/photos/53da60a46dec627b149e66f4/master/pass/hilton-moorea-lagoon-resort-spa-moorea-french-poly--110160-1.jpg')] h-[100vh]  bg-cover bg-center w-full">
+    <> 
+      <div style={{clipPath: 'polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);'}} className="bg-[url('https://media.cntraveler.com/photos/53da60a46dec627b149e66f4/master/pass/hilton-moorea-lagoon-resort-spa-moorea-french-poly--110160-1.jpg')] h-[100vh] mt-[65px]  bg-cover bg-center w-full">
         <div className="absolute flex flex-col items-center w-full top-[50vh] justify-center">
           <h1
             className={`font-bold text-white text-6xl md:text-7xl text-center  ${dancing.className}`}

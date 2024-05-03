@@ -65,26 +65,26 @@ export default function SadhuDonationSection() {
       <div className=" flex flex-col items-center mb-[40px] ">
         {feed.map((feed) => (
           <>
-            <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-2">
+            <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
               <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
-                <div className="pb-[10px]">
-                  <p
+                <div className="pb-[1px]">
+                  <span
                     className={`text-[34px] font-bold text-white ${dosis.className}`}
                   >
                     {feed.Title}
-                  </p>
+                  </span>
                 </div>
                 <div>
-                  <p
+                  <span
                     className={`text-[18px] font-bold text-white ${merry.className}`}
                   >
                     {feed.Price}
-                  </p>
+                  </span>
                 </div>
               </div>
               <div className=" w-full md:w-1/2 flex justify-center items-center">
                 <button
-                  className={`bg-[#FCD6A0] font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform`}
+                  className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform `}
                 >
                   Donate Now
                 </button>

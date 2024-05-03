@@ -16,7 +16,7 @@ const merry = Merriweather_Sans({
 const handleScrollToCard = () => {
   const cardSection = document.getElementById('cardSection');
   if (cardSection) {
-      cardSection.scrollIntoView({ behavior: 'smooth' });
+      cardSection.scrollIntoView({ behavior: 'smooth' , block: 'center'});
   }
 };
 
@@ -58,16 +58,16 @@ export default function SadhuCardSection() {
     <>
      {/* sadhus card section start */}
      <div id="cardSection" className="flex justify-center items-center h-full mb-[40px] py-10">
-            <div className=" grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 justify-center items-center gap-8  ">
+            <div className=" grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center gap-4 md:gap-6">
               {sadhuseva.map((x) => (
-                <div class="max-w-sm overflow-hidden shadow-lg w-[300px] xl:w-[270px] md:w-[350px]  h-[480px] bg-[#ffffff] 
+                <div class="max-w-sm overflow-hidden shadow-lg w-[300px] xl:w-[270px] md:w-[300px]  h-[450px] bg-[#ffffff] 
                 hover:scale-110 transition-transform duration-500 rounded-lg">
                   <img
                     class="w-full"
                     src={x.img}
                     alt="Sunset in the mountains"
                   />
-                  <div class="px-6 py-4">
+                  <div class="px-6 pt-4">
                     <div class="font-bold text-xl mb-2 text-center">
                       {x.Title}
                     </div>
@@ -75,14 +75,14 @@ export default function SadhuCardSection() {
                       {x.Description}
                     </p>
                   </div>
-                  <div class=" px-6 pb-4">
-                    <div className="flex flex-col gap-3">
+                  <div class=" px-6">
+                    <div className="flex flex-col gap-1">
                       <div className="flex justify-center items-center">
-                        <p
+                        <span
                           className={`text-[30px] font-bold text-[#870909] ${merry.className}`}
                         >
                           {x.Donation}
-                        </p>
+                        </span>
                       </div>
                       <div className="flex justify-center items-center">
                         <button
