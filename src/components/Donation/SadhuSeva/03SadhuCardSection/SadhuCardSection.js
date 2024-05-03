@@ -59,8 +59,8 @@ export default function SadhuCardSection() {
      {/* sadhus card section start */}
      <div id="cardSection" className="flex justify-center items-center h-full mb-[40px] py-10">
             <div className=" grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center gap-4 md:gap-6">
-              {sadhuseva.map((x) => (
-                <div class="max-w-sm overflow-hidden shadow-lg w-[300px] xl:w-[270px] md:w-[300px]  h-[450px] bg-[#ffffff] 
+              {sadhuseva.map((x, i) => (
+                <div key={i} class="max-w-sm overflow-hidden shadow-lg w-[300px] xl:w-[270px] md:w-[300px]  h-[450px] bg-[#ffffff] 
                 hover:scale-110 transition-transform duration-500 rounded-lg">
                   <img
                     class="w-full"
