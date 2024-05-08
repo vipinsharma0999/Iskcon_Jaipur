@@ -1,8 +1,8 @@
-.speakers h1 {
-  font-weight: bolder;
+.speakers {
+  /* font-weight: bolder; */
   text-align: center;
-  font-size: 50px;
-  background: -webkit-linear-gradient(45deg, #ee6d4e, #000000);
+  font-size: 72px;
+  background: -webkit-linear-gradient(60deg, #2980d1, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -13,11 +13,12 @@
   overflow: hidden;
   transition: width 0.7s ease-in-out;
   background-repeat: no-repeat;
-  background-position: bottom 0 right 0px;
+  background-position: center;
+  background-size: auto 500px;
 }
 
 .image-item h3 {
-  padding-top: 50px;
+  padding-top: 20px;
   font-weight: bold;
   font-size: 1.25rem;
   text-align: center;
@@ -27,8 +28,7 @@
 }
 
 .image-item:hover {
-  width: 40%; 
-  /* background-color: #ee6d4e; */
+  width: 40%;
 }
 
 .image-item:hover h3 {
@@ -37,16 +37,7 @@
   white-space: normal;
 }
 
-.image-item:hover div {
-  color: white;
-  display: block;
-}
-
 @media screen and (max-width: 1200px) {
-  .speakers {
-    padding: 125px 20px 0px;
-  }
-
   .image-row {
     flex-direction: column; /* Stack items vertically */
     height: auto;
@@ -56,8 +47,10 @@
 
   .image-item {
     transition: height 0.7s ease-in-out;
-    height: 150px;
-    width: 90%; /* Full width for each item */
+    height: 100px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
   }
 
   .image-item h3 {
@@ -66,44 +59,17 @@
 
   .image-item:hover {
     width: 90%; /* Full width for active item */
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 825px) {
-  .image-item:hover {
-    height: 450px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .image-item h3 {
-    text-align: left;
-    margin-left: 20px;
+    height: 500px;
+    background-position: center;
   }
 }
 
 @media screen and (max-width: 525px) {
   .image-item:hover {
-    height: 450px;
-    font-weight: 14px;
-  }
-
-  .speaker-details li {
-    font-size: 14px;
-  }
-
-  .image-item h3 {
-    width: 50%;
+    height: 350px;
   }
 
   .image-item:hover h3 {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .image-item:hover {
-    height: 650px;
+    font-size: 1.5rem;
   }
 }
