@@ -71,8 +71,9 @@ const HomeSchedule = () => {
           <h1 className="text-[40px] pb-2 text-left">Daily Schedule</h1>
         </motion.div>
         <div>
-          {schedule.map((s) => (
+          {schedule.map((s, i) => (
             <motion.div
+              key={i}
               ref={ref}
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -100 }}

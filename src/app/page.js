@@ -12,7 +12,7 @@ import HomeActivities from "@/components/Home/HomeActivities/HomeActivities";
 
 export default function Home() {
   return (
-    <main className="h-[110vh] w-full">
+    <main className="">
       <Hero />
       <HomeData />
       <div className="flex flex-col-reverse md:flex-row bg-gray-100">

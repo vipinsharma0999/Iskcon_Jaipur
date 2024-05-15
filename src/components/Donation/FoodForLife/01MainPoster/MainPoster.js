@@ -70,7 +70,7 @@ const feed = [
 export default function MainPoster() {
   return (
     <>
-      <div className="bg-[url('/BannerforHome.jpg')] h-[100vh]   bg-cover bg-center w-full mt-[60px]">
+      <div className="bg-[url('/Donation/FoodForNeed/BannerforHome.jpg')] h-[100vh]   bg-cover bg-center w-full mt-[60px]">
         <div className="absolute flex flex-col items-center w-full top-[60vh] justify-center">
           <h1
             className={`font-bold text-white text-6xl md:text-7xl text-center ${merri.className}`}
@@ -89,55 +89,59 @@ export default function MainPoster() {
         </div>
       </div>
 
-      {/* <div className=" mx-[20px] lg:mx-[220px] py-[40px">
-        <div className=" flex">
-          <p
-            className={`text-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
-          >
-            "Support our food donation drive, combating hunger by offering
-            nutritious meals to the needy. Your backing holds transformative
-            potential. Let's unite for change, effecting tangible results
-            together!"
-          </p>
-        </div>
-      </div> */}
-
-      {/* donation section start */}
-      <div className=" flex flex-col items-center mb-[40px] bg-red-500">
-        {feed.map((feed) => (
-          <>
-            <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
-              <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
-                <div className="pb-[1px]">
-                  <span
-                    className={`text-[30px] sm:text-[34px] font-bold text-white ${dosis.className}`}
-                  >
-                    {feed.Title}
-                  </span>
-                </div>
-                <div className="text-center">
-                  <span
-                    className={`text-[18px] font-bold text-white ${merry.className}`}
-                  >
-                    {feed.Price}
-                  </span>
-                </div>
-              </div>
-              <div className=" w-full md:w-1/2 flex justify-center items-center">
-                <button
-                  className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform `}
-                >
-                  Donate Now
-                </button>
-              </div>
+      <div className="relative bg-[url('/Donation/FoodForNeed/mv2.jpg')] bg-cover bg-center w-full">
+        <div style={{ backgroundColor: "#38002099", paddingBottom: "44px" }}>
+          <div className=" mx-[20px] lg:mx-[220px] py-[40px]">
+            <div className=" flex">
+              <p
+                className={`text-[30px] py-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
+              >
+                "Support our food donation drive, combating hunger by offering
+                nutritious meals to the needy. Your backing holds transformative
+                potential. Let&apos;s unite for change, effecting tangible
+                results together!"
+              </p>
             </div>
-            <div className="border-b-[1px] w-3/4 border-yellow-400"></div>
-          </>
-        ))}
-      </div>
-      {/* donation section end */}
+          </div>
 
-      <SadhuPaymentSection />
+          {/* donation section start */}
+          <div className=" flex flex-col items-center mb-[40px]">
+            {feed.map((feed) => (
+              <>
+                <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1 ">
+                  <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
+                    <div className="pb-[1px]">
+                      <span
+                        className={`text-[30px] sm:text-[34px] font-bold text-white ${dosis.className}`}
+                      >
+                        {feed.Title}
+                      </span>
+                    </div>
+                    <div className="max-md:text-center">
+                      <span
+                        className={`text-[18px] font-bold text-white ${merry.className}`}
+                      >
+                        {feed.Price}
+                      </span>
+                    </div>
+                  </div>
+                  <div className=" w-full md:w-1/2 flex justify-center items-center">
+                    <button
+                      className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform `}
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+                <div className="border-b-[1px] w-3/4 border-yellow-400"></div>
+              </>
+            ))}
+          </div>
+          {/* donation section end */}
+
+          <SadhuPaymentSection />
+        </div>
+      </div>
     </>
   );
 }

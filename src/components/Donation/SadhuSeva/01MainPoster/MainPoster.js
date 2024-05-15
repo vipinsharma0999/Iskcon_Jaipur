@@ -13,7 +13,7 @@ export default function MainPoster() {
 
   return (
     <>
-      <div className="relative bg-[url('/Sadhu.jpg')] h-[100vh] bg-cover bg-center w-full mt-[60px]">
+      <div className="relative bg-[url('/Donation/SadhuSeva/Sadhu.jpg')] h-[100vh] bg-cover bg-center w-full mt-[60px]">
         <div className="absolute inset-0 flex items-center justify-center top-[25vh]">
           <button
             onClick={() => handleScrollToCard()}

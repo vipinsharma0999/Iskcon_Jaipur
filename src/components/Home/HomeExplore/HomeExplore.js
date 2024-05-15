@@ -29,7 +29,7 @@ const HomeExplore = () => {
           <div className="p-10 flex flex-col items-center">
             <div className="h-[175px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center rounded-full"></div>
             <h1 className={`${dancing.className} pt-4 font-black`}>
-              Govinda's
+              Govinda&apos;s
             </h1>
           </div>
           <div className="p-10 flex flex-col items-center ">
@@ -40,7 +40,7 @@ const HomeExplore = () => {
           </div>
           <div className="p-10 flex flex-col items-center">
             <div className="h-[175px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center rounded-full"></div>
-            <h1 className={`${dancing.className} pt-4 font-black`}>D' Cafe</h1>
+            <h1 className={`${dancing.className} pt-4 font-black`}>D&apos; Cafe</h1>
           </div>
           <div className="p-10 flex flex-col items-center">
             <div className="h-[175px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center rounded-full"></div>

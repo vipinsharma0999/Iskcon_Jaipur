@@ -45,7 +45,7 @@ const HomeDonate = () => {
             <div className="text-center shadow-md">
               <div className="h-[120px] w-[200px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"></div>
               <h1 className={`${dancing.className} pt-4 font-black`}>
-                Govinda's
+                Govinda&apos;s
               </h1>
               <button className="px-2 py-1 bg-[#d17a29] mb-2 text-white rounded-full mt-1">
                 Donate
