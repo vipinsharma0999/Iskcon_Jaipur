@@ -43,7 +43,7 @@ export default function SadhuDonationSection() {
   return (
     <>
       {/* feed the sadhus section start */}
-      <div className="mx-[20px] lg:mx-[220px] mb-[40px] pt-12">
+      <div className="mx-[20px] lg:mx-[220px] mb-[40px] pt-12 ">
         <div className="flex flex-col">
           <div className="pb-[10px] text-center sm:text-left">
             <h2 className={`text-[50px] font-bold text-[#ffffff] ${merri.className}`}>

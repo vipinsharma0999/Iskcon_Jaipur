@@ -43,7 +43,7 @@ const PujaSevaPaymentSection = () => {
             SCAN & PAY with any UPI App
           </p>
         </div>
-        <div className="flex justify-center items-center w-6/12 md:w-[304px] md:h-[304px]">
+        <div className="flex justify-center items-center w-6/12 md:w-[304px] md:h-[257px]">
           <img src="/Donation/CommanImg/Screenshot.png" alt="UPI QR Code"></img>
         </div>
       </div>

@@ -11,9 +11,9 @@ const SadhuSeva = () => {
     <>
       <MainPoster />
       <div className="bg-[url('/Donation/SadhuSeva/maxresdefault.jpg')] bg-cover bg-center w-full  relative">
-        <div style={{ backgroundColor: "#38002099", paddingBottom: "44px" }}>
+        <div style={{ backgroundColor: "#b76746cc", paddingBottom: "44px" }}>
           <div className="relative">
-            <SadhuDonationSection />
+            <SadhuDonationSection /> 
             <SadhuCardSection />
             <SadhuPaymentSection />
           </div>
