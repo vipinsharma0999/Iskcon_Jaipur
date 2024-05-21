@@ -25,7 +25,7 @@ export default function FacilitiesSection(){
               </div>
               <div>
                 <p className={`text-[55px] ${playfair.className}`}>
-                  Our Hotel Facilities
+                  Our GuestHouse Facilities
                 </p>
               </div>
             </div>

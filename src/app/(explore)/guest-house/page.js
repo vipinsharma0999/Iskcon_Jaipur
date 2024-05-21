@@ -5,9 +5,6 @@ import RoomSection from '@/components/Explore/GuestHouse/03RoomSection/RoomSecti
 import FacilitiesSection from '@/components/Explore/GuestHouse/04FacilitiesSection/FacilitiesSection'
 import TestimonialSection from '@/components/Explore/GuestHouse/05TestimonialSection/TestimonialSection'
 
-import React from 'react'
-
-
 const GuestHouse = () => {
   return (
     <div>

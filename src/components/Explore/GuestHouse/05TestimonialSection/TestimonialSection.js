@@ -97,7 +97,7 @@ export default function TestimonialSection(){
   return (
     <>
       {/* <Testimonial section end> */}
-      <div className="container">
+      <div className="max-w-screen-xl mx-auto px-4 pb-20">
         <div className=" flex mx-[30px] sm:mx-[92px] justify-evenly items-center flex-wrap gap-5 my-10">
           <div className="flex flex-col  gap-2 w-full justify-center items-center ">
             <div>

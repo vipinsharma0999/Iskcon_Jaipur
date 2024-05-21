@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Merriweather_Sans, Source_Code_Pro } from "next/font/google";
 
 const sorce = Source_Code_Pro({
@@ -21,7 +21,7 @@ const sadhuseva = [
   {
     id: "1",
     img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
-    Title: "Maha Preeti Bhoj",
+    Title: "Sunday Feast",
     Description:
       "Roti, Daal, Chawal, and Multiple Vegies with 3-4 types Sweets",
     Donation: "₹ 11,000",
@@ -29,25 +29,32 @@ const sadhuseva = [
   {
     id: "2",
     img: "/Donation/SadhuSeva/sadhu-bhojan-1.jpg",
-    Title: "Preeti Bhoj",
+    Title: "Maha Preeti Bhoj",
     Description: "Paneer Meal + Special Sweets + Snacks",
     Donation: "₹ 31,000",
   },
   {
     id: "3",
     Title: "Preeti Bhoj",
-    img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
+    img: "/Donation/SadhuSeva/jp1.jpeg",
     Description: "Normal Meal + 1 Sweet + 2 special Subji",
     Donation: "₹ 21,000",
   },
   {
     id: "4",
-    img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
+    img: "/Donation/SadhuSeva/jp2.jpeg",
     Title: "Regular Bhoj",
     Description: "Normal Meal (Daal Chawal) + 1 Vegie",
     Donation: "₹ 15,000",
   },
 ];
+
+const handleScrollToPaymentSection = () => {
+  const paymentSection = document.getElementById("paymentSection");
+  if (paymentSection) {
+    paymentSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export default function SadhuCardSection() {
   return (
@@ -83,6 +90,7 @@ export default function SadhuCardSection() {
                   <div className="flex justify-center items-center">
                     <button
                       className={`bg-[#FCD6A0] font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform`}
+                      onClick={() => handleScrollToPaymentSection()}
                     >
                       Donate Now
                     </button>

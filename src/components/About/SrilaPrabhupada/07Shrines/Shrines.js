@@ -47,7 +47,7 @@ const Shrines = () => {
       </h1>
       <div className="p-10 grid md:grid-cols-2 grid-cols-1 gap-5 place-items-center">
         {memorials.map((memorial, index) => (
-          <div>
+          <div key={index}>
             <h4 className={`text-center ${architect.className}`}>{memorial.title}</h4>
             <div
               style={{

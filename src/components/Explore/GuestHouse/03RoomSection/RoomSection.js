@@ -25,7 +25,7 @@ export default function RoomSection()  {
         </div>
         <div
           className="w-[365px] h-[400px] bg-cover bg-center shadow-xl"
-          style={{ backgroundImage: "url('/Explore/GuestHouse/istockphoto4.jpg')" }}
+          style={{ backgroundImage: "url('/Explore/GuestHouse/room3.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
             <div className=" h-[238px]"></div>
@@ -46,7 +46,7 @@ export default function RoomSection()  {
 
         <div
           className="w-[365px] h-[400px] bg-cover bg-center shadow-xl"
-          style={{ backgroundImage: "url('/Explore/GuestHouse/photo2.jpg')" }}
+          style={{ backgroundImage: "url('/Explore/GuestHouse/room2.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
             <div className=" h-[238px]"></div>
@@ -67,7 +67,7 @@ export default function RoomSection()  {
 
         <div
           className="w-[365px] h-[400px] bg-cover bg-center shadow-xl"
-          style={{ backgroundImage: "url('/Explore/GuestHouse/photo3.jpg')" }}
+          style={{ backgroundImage: "url('/Explore/GuestHouse/room1.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
             <div className=" h-[238px]"></div>

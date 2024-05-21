@@ -1,12 +1,13 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { Caveat, Playfair_Display, Quicksand, Oswald } from "next/font/google";
+import NityaSevaPaymentSection from "../02NityaSevaPaymentSection/NityaSevaPaymentSection";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
 });
 
-const palyfair = Playfair_Display({
+const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
@@ -47,15 +48,19 @@ const item = [
 ];
 
 const MainPoster = () => {
-  const [showUpArrow, setShowUpArrow] = useState(false); // State to manage the visibility of the up arrow
+  const [showUpArrow, setShowUpArrow] = useState({
+    button1: false,
+    button2: false,
+    button3: false,
+  }); // State to manage the visibility of the up arrow for each button
   const donationSectionRef = useRef(null); // Ref to the donation section
 
-  const handleMouseEnter = () => {
-    setShowUpArrow(true); // Show the up arrow when mouse enters the button
+  const handleMouseEnter = (button) => {
+    setShowUpArrow((prev) => ({ ...prev, [button]: true })); // Show the up arrow for the hovered button
   };
 
-  const handleMouseLeave = () => {
-    setShowUpArrow(false); // Hide the up arrow when mouse leaves the button
+  const handleMouseLeave = (button) => {
+    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button
   };
 
   const scrollToDonationSection = () => {
@@ -67,6 +72,15 @@ const MainPoster = () => {
       });
     }
   };
+
+  const handleScrollToPaymentSection = () => {
+    const paymentSection = document.getElementById("paymentSection");
+    if (paymentSection) {
+      paymentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const buttonClasses = `bg-[#fb3f3f] font-medium text-[30px] text-[#ffffff] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${caveat1.className} transition-transform hover:scale-105`;
 
   return (
     <>
@@ -81,26 +95,26 @@ const MainPoster = () => {
           >
             Nitya Seva
           </h1>
-          <div className="xl:px-64 px-10">
+          <div className="xl:px-64 px-10 pb-3">
             <p
-              className={`text-center text-[18px] font-medium text-[#ffffff] ${palyfair.className}`}
+              className={`text-center text-[18px] font-medium text-[#ffffff] ${playfair.className}`}
             >
               <strong>
-                Note:- Please note that Nitya Seva is a monthly donation program
-                in which every month your desired amount will be automatically
-                debited from your bank. So, please choose the donation amount
-                accordingly.!
+                Nitya Seva is a monthly donation program, automatically debiting
+                your chosen amount each month. Your ongoing support sustains
+                Krishna's work. Choose your donation wisely and be a steady
+                beacon of devotion.
               </strong>
             </p>
           </div>
           <button
-            className={`bg-[#fb3f3f]  font-medium text-[30px] text-[#ffffff] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${caveat1.className} hover:scale-105 transition-transform `}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            className={buttonClasses}
+            onMouseEnter={() => handleMouseEnter("button3")}
+            onMouseLeave={() => handleMouseLeave("button3")}
             onClick={scrollToDonationSection}
           >
             Donate Now{" "}
-            {showUpArrow && (
+            {showUpArrow.button3 && (
               <img
                 src="/Donation/NityaSeva/down_arrow.svg"
                 className="inline-block w-6 h-6"
@@ -114,14 +128,14 @@ const MainPoster = () => {
 
       <div className="w-full h-[50px] bg-[#4c1a00]"></div>
 
-      <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px]">
-        <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col">
+      <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px] ">
+        <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col  mb-[135px]">
           <div className=" pb-[10px]">
             <h2 className={`${setis.className} text-[#ffffff]`}>Nitya Seva</h2>
           </div>
           <div className=" pb-[20px]">
             <p
-              className={`text-[20px] text-justify font-medium ${palyfair.className} text-[#ffffff]`}
+              className={`text-[20px] text-justify font-medium ${playfair.className} text-[#ffffff]`}
             >
               It is essential for devotees to worship their lordship in a
               wealthy and gorgeous manner befitting palatial standards.
@@ -145,7 +159,7 @@ const MainPoster = () => {
           </div>
           <div className=" mt-3 text-[#ffffff]">
             <p
-              className={`text-[20px] font-medium ${palyfair.className} text-justify `}
+              className={`text-[20px] font-medium ${playfair.className} text-justify `}
             >
               Note:- Please note that Nitya Seva is a monthly donation program
               in which every month your desired amount will be automatically
@@ -171,12 +185,12 @@ const MainPoster = () => {
         >
           <div className=" flex flex-col items-center mb-[40px]">
             {item.map((item) => (
-              <>
+              <React.Fragment key={item.id}>
                 <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
                   <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
                     <div className="pb-[1px]">
                       <span
-                        className={`text-[34px] font-bold text-white ${palyfair.className}`}
+                        className={`text-[34px] text-start max-sm:text-center font-light md:font-medium  text-white ${playfair.className}`}
                       >
                         <h2>
                           {item.id === "6" ? item.title : "Your Nitya Seva"}
@@ -185,7 +199,7 @@ const MainPoster = () => {
                     </div>
                     <div className="flex sm:text-left text-center">
                       <span
-                        className={`text-[18px] font-bold text-white ${palyfair.className} `}
+                        className={`text-[18px] font-bold text-white ${playfair.className} `}
                       >
                         {item.Price}
                       </span>
@@ -193,14 +207,15 @@ const MainPoster = () => {
                   </div>
                   <div className=" w-full md:w-1/2 flex justify-center items-center">
                     <button
-                      className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${palyfair.className} hover:scale-105 transition-transform `}
+                      className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${playfair.className} hover:scale-105 transition-transform `}
+                      onClick={() => handleScrollToPaymentSection()}
                     >
                       Donate Now
                     </button>
                   </div>
                 </div>
                 <div className="border-b-[1px] w-3/4 border-yellow-400"></div>
-              </>
+              </React.Fragment>
             ))}
 
             <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col py-[60px]">
@@ -227,52 +242,18 @@ const MainPoster = () => {
       {/* donation section end */}
 
       <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px]">
-        <div className="w-full h-[50px]"></div>
-        <div className=" mx-[60px] lg:mx-[300px] max-sm:mx-[30px] flex flex-col">
-          <div className=" pb-[10px] flex max-[567px]:text-left text-center">
-            <h2 className={`${setis.className} text-[#ffffff]`}>
-              Devotees Donates and seek blessings
-            </h2>
-          </div>
-          <div className=" pb-[20px]">
-            <p
-              className={`text-[20px] text-justify font-medium ${palyfair.className} text-[#ffffff]`}
-            >
-              If you join with any of the above seva program, we offer to
-              perform a special pooja for you in a memory of your dear ones,
-              this way you will get the blessings of Lord Krishna, and you can
-              do an automatic transfer of your desired amount in 356days.
-            </p>
-          </div>
-          <div
-            className={`text-[#ffffff] font-bold text-center ${caveat1.className} pb-[20px]`}
-          >
-            <button
-              className={`bg-[#fb3f3f]  font-medium text-[30px] text-[#ffffff] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${caveat1.className} hover:scale-105 transition-transform `}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onClick={scrollToDonationSection}
-            >
-              Contribute Now{" "}
-              {showUpArrow && (
-                <img
-                  src="/Donation/NityaSeva/up_arrow.svg"
-                  className="inline-block w-6 h-6"
-                  alt="Up Arrow"
-                />
-              )}
-            </button>
-          </div>
+        <div className="w-full h-16" id="paymentSection"></div>
+        <div className=" mx-[60px] max-sm:mx-[2px] flex flex-col">
+          <NityaSevaPaymentSection />
         </div>
       </div>
 
       <div className="relative bg-[url('/Donation/NityaSeva/new_curve.svg')] h-[100px] bg-cover bg-center w-full z-50"></div>
 
-      
       <div className="relative h-[80vh] bg-cover bg-center w-full mt-[-100px] flex justify-center items-center">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center "
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('/Donation/NityaSeva/Krishna-Painting.jpg')",
           }}
@@ -288,15 +269,15 @@ const MainPoster = () => {
         ></div>
 
         {/* Content */}
-        <div className="absolute flex flex-col items-center  px-5">
+        <div className="relative flex flex-col items-center px-5">
           <h1
             className={`font-bold text-white text-[30px] sm:text-[50px] text-center ${caveat1.className}`}
           >
             Be the Nitya Sewak of Krishna
           </h1>
-          <div className="xl:px-64 ">
+          <div className="xl:px-64 pb-3">
             <p
-              className={`text-center text-[18px] sm:font-medium text-[#ffffff] ${palyfair.className}`}
+              className={`text-center text-[18px] sm:font-medium text-[#ffffff] ${playfair.className}`}
             >
               <strong>
                 Collectively once in a time or as per your bank account choices
@@ -307,13 +288,13 @@ const MainPoster = () => {
             </p>
           </div>
           <button
-            className={`bg-[#fb3f3f]  font-medium text-[30px] text-[#ffffff] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${caveat1.className} hover:scale-105 transition-transform `}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            className={buttonClasses}
+            onMouseEnter={() => handleMouseEnter("button2")}
+            onMouseLeave={() => handleMouseLeave("button2")}
             onClick={scrollToDonationSection}
           >
             Donate Now{" "}
-            {showUpArrow && (
+            {showUpArrow.button2 && (
               <img
                 src="/Donation/NityaSeva/up_arrow.svg"
                 className="inline-block w-6 h-6"
@@ -323,6 +304,9 @@ const MainPoster = () => {
           </button>
         </div>
       </div>
+      {/* <div className=" relative mt-[-100px] max-sm:mt-[-150px]">
+        <NityaSevaPaymentSection />
+      </div> */}
     </>
   );
 };

@@ -39,7 +39,7 @@ const Introduction = () => {
               <p>
                 Born on September 01, 1896, in Calcutta, he was named Abhay
                 Charan, meaning one who is{" "}
-                <b> fearless by taking shelter at Lord Krishna's Lotus Feet</b>.
+                <b> fearless by taking shelter at Lord Krishna&apos;s Lotus Feet</b>.
               </p>
               <p className="mb-0">
                 Srila Prabhupada embarked on this journey when he traveled to

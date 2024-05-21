@@ -14,20 +14,17 @@ export default function LuxriesusSection()  {
         <div className=" w-full lg:w-1/2 flex  flex-col gap-4">
           <div className=" p-[10px]">
             <p className="text-[#D9A55B] text-[22px] tracking-widest">
-              Welcome To Royalea
+              Welcome To GuestHouse
             </p>
           </div>
           <div className=" flex items-center flex-wrap p-[10px]">
             <p className={`text-[48px] ${playfair.className}`}>
-              Enjoy Your Luxury Experience
+              Soulful Retreat
             </p>
           </div>
           <div className="">
             <p className="text-[#6C6D72] text-[16px] text-justify p-[18px]">
-              Convallis tellus id interdum velit. Et leo duis ut diam quam
-              nulla. Ultrices tincidunt arcu non sodales neque sodales ut etiam.
-              A scelerisque purus semper eget duis. Ac felis donec et odio
-              pellentesque diam volutpat
+            Luxurious rooms with serene ambiance. Experience comfort like never before. Enjoy modern amenities and charming decor. Relax in our peaceful garden. Delicious breakfast served daily. Friendly staff ensures a pleasant stay. Conveniently located near attractions
             </p>
           </div>
           <div className="flex  gap-5 flex-col md:flex-row">
@@ -69,7 +66,7 @@ export default function LuxriesusSection()  {
         {/* for image */}
         <div className=" w-full lg:w-1/2">
           <img
-            src="/Explore/GuestHouse/istock.jpg"
+            src="/Explore/GuestHouse/insideGuestHouse.jpg"
             className="w-full h-full object-cover"
             alt="Image"
           />

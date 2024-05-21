@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css";
-import Header from "../components/utilities/Header";
+import Header from "../components/utilities/Header/Header";
 import { motion } from "framer-motion";
 import SocialMediaSticky from "@/components/utilities/SocialMediaSticky";
 import FooterPage from "@/components/utilities/Footer/FooterPage";

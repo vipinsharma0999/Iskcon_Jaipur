@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Merriweather_Sans, Oswald, Dosis } from "next/font/google";
-import SadhuPaymentSection from "../../SadhuSeva/04SadhuPaymentSection/SadhuPaymentSection";
+import FoodForLifePaymentSection from "../02FoodForLifePaymentSection/FoodForLifePaymentSection";
 
 const merri = Merriweather_Sans({
   subsets: ["latin"],
@@ -67,7 +67,40 @@ const feed = [
   },
 ];
 
-export default function MainPoster() {
+const MainPoster = () => {
+  const [showUpArrow, setShowUpArrow] = useState({
+    button1: false,
+    button2: false,
+  });
+
+  const donationSectionRef = useRef(null); // Ref to the donation section
+  const paymentSectionRef = useRef(null); // Ref to the payment section
+
+  const handleMouseEnter = (button) => {
+    setShowUpArrow((prev) => ({ ...prev, [button]: true })); // Show the up arrow for the hovered button
+  };
+
+  const handleMouseLeave = (button) => {
+    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button
+  };
+
+  const scrollToDonationSection = () => {
+    // Scroll to the donation section
+    if (donationSectionRef.current) {
+      window.scrollTo({
+        top: donationSectionRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollToPaymentSection = () => {
+    const paymentSection = document.getElementById("paymentSection");
+    if (paymentSection) {
+      paymentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="bg-[url('/Donation/FoodForNeed/BannerforHome.jpg')] h-[100vh]   bg-cover bg-center w-full mt-[60px]">
@@ -83,23 +116,41 @@ export default function MainPoster() {
           </h1>
           <button
             className={`relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% mt-3 font-bold text-[#ffffff] text-[20px] py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full overflow-hidden`}
+            onMouseEnter={() => handleMouseEnter("button1")}
+            onMouseLeave={() => handleMouseLeave("button1")}
+            onClick={scrollToDonationSection}
           >
-            Donate Now
+            Donate Now{" "}
+            {showUpArrow.button1 && (
+              <img
+                src="/Donation/NityaSeva/down_arrow.svg"
+                className="inline-block w-6 h-6"
+                alt="Up Arrow"
+              />
+            )}
           </button>
         </div>
       </div>
 
-      <div className="relative bg-[url('/Donation/FoodForNeed/mv2.jpg')] bg-cover bg-center w-full">
+      <div
+        ref={donationSectionRef}
+        className="relative bg-[url('/Donation/FoodForNeed/mv2.jpg')] bg-cover bg-center w-full"
+      >
         <div style={{ backgroundColor: "#38002099", paddingBottom: "44px" }}>
           <div className=" mx-[20px] lg:mx-[220px] py-[40px]">
             <div className=" flex">
               <p
                 className={`text-[30px] py-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
               >
-                "Support our food donation drive, combating hunger by offering
+                "Join our food donation drive to fight hunger and provide
+                nourishing meals to those in need. Your support can make a world
+                of difference. Together, we can create meaningful change and
+                bring hope to our community. Let's come together and make a real
+                impact!"
+                {/* "Support our food donation drive, combating hunger by offering
                 nutritious meals to the needy. Your backing holds transformative
                 potential. Let&apos;s unite for change, effecting tangible
-                results together!"
+                results together!" */}
               </p>
             </div>
           </div>
@@ -128,8 +179,16 @@ export default function MainPoster() {
                   <div className=" w-full md:w-1/2 flex justify-center items-center">
                     <button
                       className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${merry.className} hover:scale-105 transition-transform `}
+                      onClick={() => handleScrollToPaymentSection()}
                     >
-                      Donate Now
+                      Donate Now{" "}
+                      {showUpArrow.button2 && (
+                        <img
+                          src="/Donation/NityaSeva/down_arrow.svg"
+                          className="inline-block w-6 h-6"
+                          alt="Up Arrow"
+                        />
+                      )}
                     </button>
                   </div>
                 </div>
@@ -138,10 +197,11 @@ export default function MainPoster() {
             ))}
           </div>
           {/* donation section end */}
-
-          <SadhuPaymentSection />
+          <FoodForLifePaymentSection />
         </div>
       </div>
     </>
   );
-}
+};
+
+export default MainPoster;
