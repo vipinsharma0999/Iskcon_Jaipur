@@ -11,7 +11,6 @@ const merry = Merriweather_Sans({
 });
 
 const textData = [
-  { category: "UPI:", content: "8152687.6278.payuqr@indus" },
   { category: "Account No:", content: "09871450000385" },
   { category: "Account Name:", content: "ISKCON JAIPUR" },
   { category: "IFSC:", content: "HDFC0000987" },

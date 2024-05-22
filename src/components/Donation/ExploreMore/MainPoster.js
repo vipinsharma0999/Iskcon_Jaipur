@@ -41,26 +41,31 @@ const feed = [
   {
     id: "1",
     img: "/Donation/FoodForNeed/Needy.jpg",
+    link: "/food-for-life",
     Title: "Food For Needy",
   },
   {
     id: "2",
     img: "/Donation/SadhuSeva/Sadhu.jpg",
+    link: "/sadhu-seva",
     Title: "Sadhu Seva",
   },
   {
     id: "3",
-    img: "/Donation/NityaSeva/nitya-seva-mainpage.jpg",
+    img: "/Donation/NityaSeva/NITYA_SEWA.jpg",
+    link: "/nitya-seva",
     Title: "Nitya Seva",
   },
   {
     id: "4",
     img: "/Donation/GauSeva/Gaushala.jpg",
+    link: "/gau-seva",
     Title: "Gau Seva",
   },
   {
     id: "5",
     img: "/Donation/PujaSeva/puja.jpg",
+    link: "/puja-seva",
     Title: "Puja",
   },
 ];
@@ -71,7 +76,7 @@ const MainPoster = () => {
   const secondRow = feed.slice(3); // Remaining items for the second row
 
   return (
-    <div className="flex flex-wrap justify-center mt-20">
+    <div className="flex flex-wrap justify-center pt-32 pb-10">
       {/* Rendering the first row */}
       {firstRow.map((item, index) => (
         <div
@@ -79,7 +84,7 @@ const MainPoster = () => {
           className=" shadow-lg max-w-xs bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 mx-10 mb-6 w-full md:w-1/3 flex-shrink-0
           hover:scale-110 transition-transform duration-500 "
         >
-          <Link href="#">
+          
             <Image
               className="rounded-t-lg"
               src={item.img}
@@ -88,12 +93,12 @@ const MainPoster = () => {
               height={imageSize.height}
               layout="responsive"
             />
-          </Link>
+         
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center">
               {item.Title}
             </h5>
-            <Link href="#">
+            <Link href={item.link}>
               <button className = {`ml-[80px] bg-[#fb3f3f] font-medium text-[20px] text-[#ffffff] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${caveat1.className} transition-transform hover:scale-105`}>
                 Donate Now
               </button>
@@ -109,7 +114,7 @@ const MainPoster = () => {
           className="shadow-lg mt-5 max-w-xs bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 mx-10 mb-6 w-full md:w-1/2 flex-shrink-0
           hover:scale-110 transition-transform duration-500"
         >
-          <Link href="#">
+        
             <Image
               className="rounded-t-lg"
               src={item.img}
@@ -118,12 +123,12 @@ const MainPoster = () => {
               height={100}
               layout="responsive"
             />
-          </Link>
+         
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center">
               {item.Title}
             </h5>
-            <Link href="#">
+            <Link href={item.link}>
               <button className={`ml-[90px] bg-[#fb3f3f] font-medium text-[20px] text-[#ffffff] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${caveat1.className} transition-transform hover:scale-105`}>
                 Donate Now
               </button>

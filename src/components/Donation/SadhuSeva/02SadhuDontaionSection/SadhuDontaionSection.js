@@ -46,13 +46,20 @@ export default function SadhuDonationSection() {
       <div className="mx-[20px] lg:mx-[220px] mb-[40px] pt-12 ">
         <div className="flex flex-col">
           <div className="pb-[10px] text-center sm:text-left">
-            <h2 className={`text-[50px] font-bold text-[#ffffff] ${merri.className}`}>
+            <h2
+              className={`text-[50px] font-bold text-[#ffffff] ${merri.className}`}
+            >
               Feed the Sadhus
             </h2>
           </div>
           <div>
-            <p className={`text-[20px] text-[#ffffff] text-justify ${merri.className}`}>
-              Sadhu Bhojdan means "Donation to Sadhu." By donating, you support devoted saints at ISKCON Mandir. These saints share love and embody the Lord's compassion, bringing spiritual light to many lives.
+            <p
+              className={`text-[20px] text-[#ffffff] text-justify ${merri.className}`}
+            >
+              Sadhu Bhojdan means &quot;Donation to Sadhu.&quot; By donating,
+              you support devoted saints at ISKCON Mandir. These saints share
+              love and embody the Lord&apos;s compassion, bringing spiritual light to
+              many lives.
             </p>
           </div>
         </div>
@@ -66,12 +73,16 @@ export default function SadhuDonationSection() {
             <div className="flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
               <div className="flex flex-col justify-center items-center md:justify-start md:items-start w-full md:w-1/2">
                 <div className="pb-[1px]">
-                  <span className={`text-[34px] font-bold text-white ${dosis.className}`}>
+                  <span
+                    className={`text-[34px] font-bold text-white ${dosis.className}`}
+                  >
                     {feedItem.Title}
                   </span>
                 </div>
                 <div>
-                  <span className={`text-[18px] font-bold text-white ${merry.className}`}>
+                  <span
+                    className={`text-[18px] font-bold text-white ${merry.className}`}
+                  >
                     {feedItem.Price}
                   </span>
                 </div>

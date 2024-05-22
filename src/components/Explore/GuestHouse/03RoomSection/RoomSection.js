@@ -28,17 +28,12 @@ export default function RoomSection()  {
           style={{ backgroundImage: "url('/Explore/GuestHouse/room3.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
-            <div className=" h-[238px]"></div>
-            <div className=" h-[100px]">
+            <div className=" h-[300px]"></div>
+            <div className=" h-[20px]">
               <h1
-                className={`text-[30px] text-white animate-bounce  ${playfair.className} `}
+                className={`text-[20px] text-white animate-bounce  ${playfair.className} `}
               >
                 Standard Room
-              </h1>
-              <h1
-                className={`text-[18px] text-white animate-bounce  ${playfair.className}`}
-              >
-                $45/Night
               </h1>
             </div>
           </div>
@@ -49,17 +44,12 @@ export default function RoomSection()  {
           style={{ backgroundImage: "url('/Explore/GuestHouse/room2.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
-            <div className=" h-[238px]"></div>
-            <div className=" h-[100px]">
+            <div className=" h-[300px]"></div>
+            <div className=" h-[20px]">
               <h1
-                className={`text-[30px] text-white animate-bounce  ${playfair.className} `}
+                className={`text-[20px] text-white animate-bounce  ${playfair.className} `}
               >
                 Superior Room
-              </h1>
-              <h1
-                className={`text-[18px] text-white animate-bounce  ${playfair.className}`}
-              >
-                $129/Night
               </h1>
             </div>
           </div>
@@ -70,17 +60,12 @@ export default function RoomSection()  {
           style={{ backgroundImage: "url('/Explore/GuestHouse/room1.jpg')" }}
         >
           <div className=" flex flex-col gap-5 p-[10px]">
-            <div className=" h-[238px]"></div>
-            <div className=" h-[100px]">
+            <div className=" h-[300px]"></div>
+            <div className=" h-[20px]">
               <h1
-                className={`text-[30px] text-white animate-bounce  ${playfair.className} `}
+                className={`text-[20px] text-white animate-bounce  ${playfair.className} `}
               >
                 Grand Delux Room
-              </h1>
-              <h1
-                className={`text-[18px] text-white animate-bounce  ${playfair.className}`}
-              >
-                $99/Night
               </h1>
             </div>
           </div>

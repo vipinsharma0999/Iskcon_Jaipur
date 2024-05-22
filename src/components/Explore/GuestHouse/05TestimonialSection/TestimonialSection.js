@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import React from "react";
-import {Playfair_Display } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -93,7 +93,7 @@ const settings = {
   ],
 };
 
-export default function TestimonialSection(){
+export default function TestimonialSection() {
   return (
     <>
       {/* <Testimonial section end> */}
@@ -119,10 +119,9 @@ export default function TestimonialSection(){
             <div className="m-[20px] sm:h-[450px] h-[450px] bg-[#e6e4e274] shadow-xl">
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
-                  Convallis tellus id interdum velit. Et leo duis ut diam quam
-                  nulla. Ultrices tincidunt arcu non sodales neque sodales ut
-                  etiam. A scelerisque purus semper eget duis. Ac felis donec et
-                  odio pellentesque diam volutpat
+                  Location is little far from the city although they have a
+                  parking space relaxing and nice atmosphere. Quality food at
+                  Govindas. Must visit Hare Krishna 🙏🏻🌸
                 </p>
               </div>
               <div className="h-[130px]  ">
@@ -133,10 +132,10 @@ export default function TestimonialSection(){
                     src="https://images.unsplash.com/photo-1480429370139-e0132c086e2a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                   />
-                  <div class="font-medium dark:text-white mt-[-15px]">
-                    <div>Jese Leos</div>
+                  <div class="font-medium mt-[-15px]">
+                    <div className="text-gray-500">Sumit Kar</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400">
-                      Joined in August 2014
+                      Joined in August 2021
                     </div>
                   </div>
                 </div>
@@ -148,11 +147,10 @@ export default function TestimonialSection(){
             <div className="m-[20px] sm:h-[450px] h-[450px] bg-[#e6e4e274] shadow-xl">
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
-                  Sheer brilliance and unwavering excellence define this
-                  remarkable achievement. A pinnacle of perfection, setting the
-                  gold standard for excellence. Exemplifying greatness in every
-                  aspect, it stands as a testament to unparalleled quality and
-                  distinction
+                  It was a really great atmosphere for the family and the room
+                  was clean and a good place it's great and amazing experience
+                  Really great opportunity to stay with Krishna temple geust
+                  house.
                 </p>
               </div>
               <div className="h-[130px]  ">
@@ -163,10 +161,10 @@ export default function TestimonialSection(){
                     src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                   />
-                  <div class="font-medium dark:text-white mt-[-15px]">
-                    <div>Edward Taylor</div>
+                  <div class="font-medium  mt-[-15px]">
+                    <div className="text-gray-500">Edward Taylor</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400">
-                      Joined in May 2016
+                      Joined in May 2021
                     </div>
                   </div>
                 </div>
@@ -178,10 +176,11 @@ export default function TestimonialSection(){
             <div className="m-[20px] sm:h-[450px] h-[450px] bg-[#e6e4e274] shadow-xl">
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
-                  Incomparable in its brilliance, this masterpiece shines
-                  brightly, a beacon of excellence. Unmatched in its precision
-                  and innovation, it embodies the essence of perfection. A true
-                  marvel, deserving of the highest praise and acclaim
+                  Vishal Singla - Amazing place to stay there. Very calm, neat
+                  and clean rooms. It was very hot outside in summers so it was
+                  great relief staying in air-conditioned rooms after 8-10 hrs
+                  of travel. There room service was also decent. Overall
+                  satisfied.
                 </p>
               </div>
               <div className="h-[130px]  ">
@@ -192,8 +191,8 @@ export default function TestimonialSection(){
                     src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=1868&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                   />
-                  <div class="font-medium dark:text-white mt-[-15px]">
-                    <div>Oliver White</div>
+                  <div class="font-medium mt-[-15px]">
+                    <div className="text-gray-500">Vishal Singla</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400">
                       Joined in feb 2018
                     </div>
@@ -207,10 +206,12 @@ export default function TestimonialSection(){
             <div className="m-[20px] sm:h-[450px] h-[450px] bg-[#e6e4e274] shadow-xl">
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
-                  A masterpiece of unparalleled brilliance, it sets the bar
-                  sky-high for excellence. With unmatched precision and flawless
-                  execution, it stands as a shining example of perfection. A
-                  true gem, deserving of utmost admiration and praise.
+                  Jaipur Iskcon Guest House is a Wonderful Guest House,
+                  Beautiful Rooms, Good Lift, attached Govindas Restaurant
+                  providing Mouth Watering Dishes,Weekend trips, Corporate
+                  Meetings and so on... Next time when you visit Jaipur, Add
+                  Iskcon to take darshan of Sri Sri Girdhari Dauji, Sri Sri Gaur
+                  Nitai, Sri Sri Radha Madan Mohanji
                 </p>
               </div>
               <div className="h-[130px]  ">
@@ -221,8 +222,8 @@ export default function TestimonialSection(){
                     src="https://images.unsplash.com/photo-1582274528667-1e8a10ded835?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                   />
-                  <div class="font-medium dark:text-white mt-[-15px]">
-                    <div>Oliver White</div>
+                  <div class="font-medium mt-[-15px]">
+                    <div className="text-gray-500">shamsundar das</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400">
                       Joined in jan 2020
                     </div>
@@ -236,11 +237,11 @@ export default function TestimonialSection(){
             <div className="m-[20px] sm:h-[450px] h-[450px] bg-[#e6e4e274] shadow-xl">
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
-                  Excellence personified, this remarkable achievement surpasses
-                  all expectations. A beacon of brilliance and innovation, it
-                  sets the standard for perfection. With unparalleled precision
-                  and unrivaled quality, it earns the highest accolades and
-                  admiration.
+                  Very nice and decent rooms. Just outside hotel is
+                  Govinda&apos;s, for pure veg food. However, timings are
+                  restricted, but food is awesome. Connected with Iskcon temple.
+                  Everything is just so spiritual there. Its like really heaven
+                  on earth
                 </p>
               </div>
               <div className="h-[130px]  ">
@@ -266,4 +267,4 @@ export default function TestimonialSection(){
       {/* <facilities section end> */}
     </>
   );
-};
+}

@@ -11,7 +11,7 @@ const CowCarousel = () => {
   return (
     <>
       <div className=" mt-10 text-center font-medium flex justify-center items-center">
-        <p className={`text-[42px] text-[#000000] ${playfair.className}`}>
+        <p className={`text-[42px] text-[#ffffff] ${playfair.className}`}>
           Our Gaushala
         </p>
       </div>

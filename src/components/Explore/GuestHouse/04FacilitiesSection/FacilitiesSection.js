@@ -4,9 +4,10 @@ import {Playfair_Display } from "next/font/google";
 import { TbAirConditioning } from "react-icons/tb";
 import { ImSpoonKnife } from "react-icons/im";
 import { FaWifi } from "react-icons/fa6";
-import { LiaSwimmingPoolSolid, LiaUmbrellaBeachSolid } from "react-icons/lia";
 import { MdBedroomParent } from "react-icons/md";
 import { IoShirtOutline, IoCarSportOutline } from "react-icons/io5";
+import { GiByzantinTemple } from "react-icons/gi";
+import { IoIosCafe } from "react-icons/io";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -31,10 +32,7 @@ export default function FacilitiesSection(){
             </div>
             <div className="grow ">
               <p className="text-[#6C6D72] text-[16px] text-justify p-[5px]">
-                Convallis tellus id interdum velit. Et leo duis ut diam quam
-                nulla. Ultrices tincidunt arcu non sodales neque sodales ut
-                etiam. A scelerisque purus semper eget duis. Ac felis donec et
-                odio pellentesque diam volutpat
+                Along with the spiritual atmosphere, we provide many other facilities for our guests. These include well-maintained rooms that are always clean and air-conditioned. laundry, parking, cafe, Govinda&apos;s restaurant, Gift shop are also there.
               </p>
             </div>
           </div>
@@ -75,10 +73,10 @@ export default function FacilitiesSection(){
 
             <div className=" bg-[#3fc94110] grow h-[216px] p-[30px] w-full md:w-1/2 lg:w-1/4 flex flex-col justify-center items-center">
               <div className="w-[100px] h-[100px] rounded-full border border-[#a67b4a] flex justify-center items-center">
-                <LiaSwimmingPoolSolid className="text-[#95af3dc7] text-4xl" />
+                <IoIosCafe className="text-[#95af3dc7] text-4xl" />
               </div>
               <div className="w-[242px] h-[26px] flex justify-center items-center mt-[10px]">
-                <h2 className="text-[22px] text-[#091826] font-medium">Pool</h2>
+                <h2 className="text-[22px] text-[#091826] font-medium">D&apos;Cafe</h2>
               </div>
             </div>
           </div>
@@ -116,11 +114,11 @@ export default function FacilitiesSection(){
             </div>
             <div className="  grow h-[216px] p-[30px] w-full md:w-1/2 lg:w-1/4 flex flex-col justify-center items-center">
               <div className="w-[100px] h-[100px] rounded-full border border-[#a67b4a] flex justify-center items-center">
-                <LiaUmbrellaBeachSolid className=" text-4xl" />
+                <GiByzantinTemple className=" text-4xl" />
               </div>
               <div className="w-[242px] h-[26px] flex justify-center items-center mt-[10px]">
                 <h2 className="text-[22px] text-[#091826] font-medium">
-                  Beach
+                  Temple View
                 </h2>
               </div>
             </div>

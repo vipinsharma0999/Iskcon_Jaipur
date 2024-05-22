@@ -84,7 +84,10 @@ const MainPoster = () => {
 
   return (
     <>
-      <div className="bg-[url('/Donation/NityaSeva/nitya-seva-mainpage.jpg')] h-[100vh] bg-cover bg-center w-full mt-[40px]">
+      <div className="relative h-[100vh] mt-[40px] w-full">
+        <div className="absolute inset-0 bg-[url('/Donation/NityaSeva/NITYA_SEWA.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+        {/* Semi-transparent overlay */}
         <div className="absolute flex flex-col items-center w-full top-[25vh] sm:top-[45vh] justify-center">
           <h1
             className={`font-bold text-white text-6xl md:text-7xl text-center ${caveat1.className}`}
@@ -95,14 +98,14 @@ const MainPoster = () => {
           >
             Nitya Seva
           </h1>
-          <div className="xl:px-64 px-10 pb-3">
+          <div className="xl:px-64 px-10 pb-3 mt-2">
             <p
-              className={`text-center text-[18px] font-medium text-[#ffffff] ${playfair.className}`}
+              className={`text-center text-[18px] font-extrabold drop-shadow-lg text-[#ffffff] ${playfair.className}`}
             >
               <strong>
                 Nitya Seva is a monthly donation program, automatically debiting
                 your chosen amount each month. Your ongoing support sustains
-                Krishna's work. Choose your donation wisely and be a steady
+                Krishna&apos;s work. Choose your donation wisely and be a steady
                 beacon of devotion.
               </strong>
             </p>
@@ -124,11 +127,12 @@ const MainPoster = () => {
           </button>
         </div>
       </div>
-      <div className="bg-[url('/Donation/NityaSeva/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
 
-      <div className="w-full h-[50px] bg-[#4c1a00]"></div>
+      <div className=" relative bg-[url('/Donation/NityaSeva/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
 
-      <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px] ">
+      <div className="w-full h-[50px] bg-[#465874]"></div>
+
+      <div className="bg-gradient-to-b from-[#465874] via-[#6a8daf] to-[#9fbfdf] py-[70px]">
         <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col  mb-[135px]">
           <div className=" pb-[10px]">
             <h2 className={`${setis.className} text-[#ffffff]`}>Nitya Seva</h2>
@@ -175,22 +179,23 @@ const MainPoster = () => {
       {/* donation section start */}
       <div
         ref={donationSectionRef}
-        className="bg-[url('/Donation/NityaSeva/Nitya-Seva.jpg')] bg-cover bg-center w-full  relative"
+        className="bg-[url('/Donation/NityaSeva/NITYA_SEWA.jpg')] bg-cover bg-center w-full relative"
       >
         <div
           style={{
             background:
-              "linear-gradient(180deg, #9b2636 0%, rgba(38, 17, 0, 0.61) 100%)",
+              "linear-gradient(180deg, rgba(130, 158, 187, 0.8) 0%, rgba(193, 209, 224, 0.8) 100%)",
           }}
         >
-          <div className=" flex flex-col items-center mb-[40px]">
+          <div className="flex flex-col items-center mb-[40px]">
             {item.map((item) => (
               <React.Fragment key={item.id}>
-                <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
-                  <div className=" flex flex-col justify-center items-center md:justify-start md:items-start  w-full md:w-1/2">
+                <div className="flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
+                  <div className="flex flex-col justify-center items-center md:justify-start md:items-start w-full md:w-1/2">
                     <div className="pb-[1px]">
                       <span
-                        className={`text-[34px] text-start max-sm:text-center font-light md:font-medium  text-white ${playfair.className}`}
+                        className={`text-[34px] text-start max-sm:text-center font-light md:font-medium text-white ${playfair.className}`}
+                        style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
                       >
                         <h2>
                           {item.id === "6" ? item.title : "Your Nitya Seva"}
@@ -199,34 +204,36 @@ const MainPoster = () => {
                     </div>
                     <div className="flex sm:text-left text-center">
                       <span
-                        className={`text-[18px] font-bold text-white ${playfair.className} `}
+                        className={`text-[18px] font-bold text-white ${playfair.className}`}
+                        style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
                       >
                         {item.Price}
                       </span>
                     </div>
                   </div>
-                  <div className=" w-full md:w-1/2 flex justify-center items-center">
+                  <div className="w-full md:w-1/2 flex justify-center items-center">
                     <button
-                      className={`bg-[#FCD6A0]  font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2  md:px-4 rounded-full drop-shadow-xl ${playfair.className} hover:scale-105 transition-transform `}
+                      className={`bg-[#FCD6A0] font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${playfair.className} hover:scale-105 transition-transform `}
                       onClick={() => handleScrollToPaymentSection()}
                     >
                       Donate Now
                     </button>
                   </div>
                 </div>
-                <div className="border-b-[1px] w-3/4 border-yellow-400"></div>
+                <div className="border-b-[2px] w-3/4 border-white/50"></div>
               </React.Fragment>
             ))}
 
-            <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col py-[60px]">
-              <div className=" pb-[10px] flex justify-center items-center">
-                <h1 className={`${oswald1.className} text-[#ffffff]`}>
+            <div className="mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col py-[60px]">
+              <div className="pb-[10px] flex justify-center items-center">
+                <h1 className={`${oswald1.className} text-white`}>
                   Nitya Seva
                 </h1>
               </div>
-              <div className=" pb-[20px]">
+              <div className="pb-[20px]">
                 <p
-                  className={`text-[25px] text-justify font-medium ${oswald1.className} text-[#ffffff]`}
+                  className={`text-[25px] text-justify font-medium ${oswald1.className} text-white`}
+                  style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
                 >
                   To make progress in Krishna consciousness, we always need the
                   blessing of the Lord on your special day. And when the Lord is
@@ -239,6 +246,7 @@ const MainPoster = () => {
           <div className="bg-[url('/Donation/NityaSeva/reverse_curve.svg')] h-[100px] bg-cover bg-center w-full z-10 mt-[20px]"></div>
         </div>
       </div>
+
       {/* donation section end */}
 
       <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px]">

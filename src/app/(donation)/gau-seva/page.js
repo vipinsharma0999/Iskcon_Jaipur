@@ -18,6 +18,7 @@ const GauSeva = () => {
   return (
     <>
         <MainPoster />
+      
     </>
   )
 }

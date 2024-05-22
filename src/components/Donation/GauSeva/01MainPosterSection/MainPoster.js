@@ -11,6 +11,8 @@ import {
 import SadhuPaymentSection from "../../SadhuSeva/04SadhuPaymentSection/SadhuPaymentSection";
 import GauSevaPaymentSection from "../03GauSevaPaymentSectoin.js/GauSevaPaymentSection";
 import CowCarousel from "../02Carousel/CowCarousel";
+import AdoptCow from "../04AdoptCow/AdoptCow";
+import GauSeva from "@/app/(donation)/gau-seva/page";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -55,8 +57,8 @@ const feed = [
     Price: "₹ 500",
   },
   {
-    id: "2",
-    img: "https://4.bp.blogspot.com/-9N5FcrV8iEc/UGJ3VPJhwZI/AAAAAAAAMEQ/C6xGZzYkMms/s1600/310_001.jpg",
+    id: "2 ",
+    img: "https://wallpaperaccess.com/full/2220002.jpg",
     Title: "Feeds 1 cow for 7 days",
     Price: "₹ 1100",
   },
@@ -80,9 +82,8 @@ const feed = [
   },
   {
     id: "6",
-    img: "https://wallpaperaccess.com/full/2220002.jpg",
-    Title: "Feeds 15 cows for 7 days",
-    Price: "₹ 11,000",
+    img: "https://4.bp.blogspot.com/-9N5FcrV8iEc/UGJ3VPJhwZI/AAAAAAAAMEQ/C6xGZzYkMms/s1600/310_001.jpg",
+    Price: "Amount of Your Choice",
   },
 ];
 
@@ -112,15 +113,6 @@ const MainPoster = () => {
     }
   };
 
-  const scrollToPaymentSection = () => {
-    // Scroll to the donation section
-    if (paymentSectionRef.current) {
-      window.scrollTo({
-        top: paymentSectionRef.current.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const handleScrollToPaymentSection = () => {
     const paymentSection = document.getElementById("paymentSection");
@@ -172,8 +164,6 @@ const MainPoster = () => {
       </div>
       <div className="bg-[url('/Donation/GauSeva/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
 
-      
-
       <div className="pt-[10px] pb-28"
         style={{ background: "linear-gradient(to bottom, #ca7527, #000000)" }}
       >
@@ -205,7 +195,7 @@ const MainPoster = () => {
                     />
                   </div>
                   <div className=" w-[230px] h-10 text-center">
-                    <h3 className="text-[#ffffff]">{item.Price}</h3>
+                  <h3 className={`text-[${item.id === '6' ? '18px' : '18px'}] text-[#ffffff]`}>{item.Price}</h3>
                     <div className=" w-full border-white-400"></div>
                   </div>
                   <div className="mt-2">
@@ -235,10 +225,15 @@ const MainPoster = () => {
             ))}
           </div>
         </div>
-        <div className="mt-28 mb-5 w-full">
+        <div className="mt-10 w-full">
+          <AdoptCow />
+        </div>
+        <div className="mt-5 mb-5 w-full">
           <GauSevaPaymentSection />
         </div>
       </div>
+
+
     </>
   );
 };

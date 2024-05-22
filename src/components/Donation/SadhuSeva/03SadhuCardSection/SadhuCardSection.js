@@ -42,7 +42,7 @@ const sadhuseva = [
   },
   {
     id: "4",
-    img: "/Donation/SadhuSeva/jp2.jpeg",
+    img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
     Title: "Regular Bhoj",
     Description: "Normal Meal (Daal Chawal) + 1 Vegie",
     Donation: "₹ 15,000",
@@ -71,9 +71,15 @@ export default function SadhuCardSection() {
               className="max-w-sm overflow-hidden shadow-lg w-[300px] xl:w-[270px] md:w-[300px]  h-[450px] bg-[#ffffff] 
                 hover:scale-110 transition-transform duration-500 rounded-lg"
             >
-              <img className="w-full" src={x.img} alt="Sunset in the mountains" />
+              <img
+                className="w-full"
+                src={x.img}
+                alt="Sunset in the mountains"
+              />
               <div className="px-6 pt-4">
-                <div className="font-bold text-xl mb-2 text-center">{x.Title}</div>
+                <div className="font-bold text-xl mb-2 text-center">
+                  {x.Title}
+                </div>
                 <p className="text-gray-700 text-base text-center">
                   {x.Description}
                 </p>

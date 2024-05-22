@@ -142,11 +142,11 @@ const MainPoster = () => {
               <p
                 className={`text-[30px] py-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
               >
-                "Join our food donation drive to fight hunger and provide
+                &quot;Join our food donation drive to fight hunger and provide
                 nourishing meals to those in need. Your support can make a world
                 of difference. Together, we can create meaningful change and
-                bring hope to our community. Let's come together and make a real
-                impact!"
+                bring hope to our community. Let&apos;s come together and make a real
+                impact!&quot;
                 {/* "Support our food donation drive, combating hunger by offering
                 nutritious meals to the needy. Your backing holds transformative
                 potential. Let&apos;s unite for change, effecting tangible
