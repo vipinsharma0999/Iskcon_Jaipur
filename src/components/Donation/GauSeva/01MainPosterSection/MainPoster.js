@@ -76,7 +76,7 @@ const feed = [
   },
   {
     id: "5",
-    img: "Donation/GauSeva/Krishna-with-cow.jpg",
+    img: "Donation/GauSeva/Krishna-with-cow1.jpg",
     Title: "Feeds 7 cows for 7 days",
     Price: "₹ 5100",
   },
@@ -113,7 +113,6 @@ const MainPoster = () => {
     }
   };
 
-
   const handleScrollToPaymentSection = () => {
     const paymentSection = document.getElementById("paymentSection");
     if (paymentSection) {
@@ -141,7 +140,8 @@ const MainPoster = () => {
               className={`text-center text-[18px] font-fold text-[#ffffff] ${playfair.className}`}
             >
               <strong>
-                Serving and protecting cows is serving and protecting all living beings
+                Serving and protecting cows is serving and protecting all living
+                beings
               </strong>
             </p>
           </div>
@@ -164,7 +164,8 @@ const MainPoster = () => {
       </div>
       <div className="bg-[url('/Donation/GauSeva/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
 
-      <div className="pt-[10px] pb-28"
+      <div
+        className="pt-[10px] pb-28"
         style={{ background: "linear-gradient(to bottom, #ca7527, #000000)" }}
       >
         <CowCarousel />
@@ -195,7 +196,13 @@ const MainPoster = () => {
                     />
                   </div>
                   <div className=" w-[230px] h-10 text-center">
-                  <h3 className={`text-[${item.id === '6' ? '18px' : '18px'}] text-[#ffffff]`}>{item.Price}</h3>
+                    <h3
+                      className={`text-[${
+                        item.id === "6" ? "18px" : "18px"
+                      }] text-[#ffffff]`}
+                    >
+                      {item.Price}
+                    </h3>
                     <div className=" w-full border-white-400"></div>
                   </div>
                   <div className="mt-2">
@@ -231,9 +238,16 @@ const MainPoster = () => {
         <div className="mt-5 mb-5 w-full">
           <GauSevaPaymentSection />
         </div>
+
+        <div  id="contactSection"> 
+          <h1
+            className="text-white text-center text-5xl max-sm:text-2xl py-16 px-5"
+            style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black" }}
+          >
+            Contact Us: 9351549745
+          </h1>
+        </div>
       </div>
-
-
     </>
   );
 };

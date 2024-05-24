@@ -132,11 +132,20 @@ const MainPoster = () => {
         </div>
       </div>
 
+      <div className=" relative bg-[url('/Donation/FoodForNeed/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
+
+      <div className="w-full h-[50px] bg-[#9a9fe0]"></div>
+
       <div
         ref={donationSectionRef}
         className="relative bg-[url('/Donation/FoodForNeed/mv2.jpg')] bg-cover bg-center w-full"
       >
-        <div style={{ backgroundColor: "#38002099", paddingBottom: "44px" }}>
+        <div
+          style={{
+            backgroundImage: "linear-gradient(to bottom, #9a9fe0, #38002099)",
+            paddingBottom: "44px",
+          }}
+        >
           <div className=" mx-[20px] lg:mx-[220px] py-[40px]">
             <div className=" flex">
               <p
@@ -145,8 +154,8 @@ const MainPoster = () => {
                 &quot;Join our food donation drive to fight hunger and provide
                 nourishing meals to those in need. Your support can make a world
                 of difference. Together, we can create meaningful change and
-                bring hope to our community. Let&apos;s come together and make a real
-                impact!&quot;
+                bring hope to our community. Let&apos;s come together and make a
+                real impact!&quot;
                 {/* "Support our food donation drive, combating hunger by offering
                 nutritious meals to the needy. Your backing holds transformative
                 potential. Let&apos;s unite for change, effecting tangible

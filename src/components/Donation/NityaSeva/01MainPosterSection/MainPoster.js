@@ -130,9 +130,9 @@ const MainPoster = () => {
 
       <div className=" relative bg-[url('/Donation/NityaSeva/curve.svg')] h-[150px] bg-cover bg-center w-full z-10 mt-[-150px]"></div>
 
-      <div className="w-full h-[50px] bg-[#465874]"></div>
+      <div className="w-full h-[50px] bg-[#642F15]"></div>
 
-      <div className="bg-gradient-to-b from-[#465874] via-[#6a8daf] to-[#9fbfdf] py-[70px]">
+      <div className="bg-gradient-to-b from-[#642F15] via-[#F7CA18] to-[#9fbfdf] py-[70px]">
         <div className=" mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col  mb-[135px]">
           <div className=" pb-[10px]">
             <h2 className={`${setis.className} text-[#ffffff]`}>Nitya Seva</h2>
@@ -184,7 +184,7 @@ const MainPoster = () => {
         <div
           style={{
             background:
-              "linear-gradient(180deg, rgba(130, 158, 187, 0.8) 0%, rgba(193, 209, 224, 0.8) 100%)",
+              "linear-gradient(180deg, rgba(100, 47, 21, 0.8) 0%, rgba(247, 202, 24, 0.8) 100%)",
           }}
         >
           <div className="flex flex-col items-center mb-[40px]">

@@ -263,6 +263,15 @@ export default function TestimonialSection() {
             </div>
           </div>
         </Slider>
+
+        <div  id="contactSection">
+          <h1
+            className="text-[#98532d] text-center text-5xl max-sm:text-2xl max-[330px]:text-xl pt-28 max-sm:pt-14 px-5"
+          >
+            Contact Us: 8905661443
+          </h1>
+        </div> 
+        
       </div>
       {/* <facilities section end> */}
     </>

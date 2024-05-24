@@ -21,15 +21,15 @@ const caveat1 = Caveat({
 const feed = [
   {
     id: "1",
-    img: "/Donation/GauSeva/img1.jpeg",
+    img: "/Donation/GauSeva/img1.jpg",
   },
 ];
 
 const AdoptCow = () => {
-  const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection");
-    if (paymentSection) {
-      paymentSection.scrollIntoView({ behavior: "smooth" });
+  const handleScrollToContactSection = () => {
+    const contactSection = document.getElementById("contactSection");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
   const imageSize = { width: 200, height: 200 }; // Set width and height to match the "Gau Seva" image
@@ -101,7 +101,7 @@ const AdoptCow = () => {
               </h5> */}
               <button
                 className={`ml-[85px] bg-[#fb3f3f] font-medium text-[20px] text-[#ffffff] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${caveat1.className} transition-transform hover:scale-105`}
-                onClick={handleScrollToPaymentSection}
+                onClick={handleScrollToContactSection}
               >
                 Adopt Me
               </button>

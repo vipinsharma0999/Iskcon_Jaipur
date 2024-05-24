@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+import React, { useEffect } from "react";
 import "flowbite";
 import { Playfair_Display } from "next/font/google";
 
@@ -8,6 +7,23 @@ const playfair = Playfair_Display({
 });
 
 const CowCarousel = () => {
+  useEffect(() => {
+    const preloadImages = () => {
+      const images = [
+        "/Donation/GauSeva/img5.jpg",
+        "/Donation/GauSeva/img6.jpg",
+        "/Donation/GauSeva/img7.jpg",
+        "/Donation/GauSeva/gau1.jpg",
+        "/Donation/GauSeva/gau2.jpg",
+      ];
+      images.forEach((image) => {
+        new Image().src = image;
+      });
+    };
+
+    preloadImages();
+  }, []);
+
   return (
     <>
       <div className=" mt-10 text-center font-medium flex justify-center items-center">
@@ -25,7 +41,7 @@ const CowCarousel = () => {
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="/Donation/GauSeva/gau5.jpg"
+                src="/Donation/GauSeva/img5.jpg"
                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
@@ -33,7 +49,7 @@ const CowCarousel = () => {
 
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="/Donation/GauSeva/gau4.jpg"
+                src="/Donation/GauSeva/img6.jpg"
                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
@@ -41,7 +57,7 @@ const CowCarousel = () => {
 
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="/Donation/GauSeva/gau3.jpg"
+                src="/Donation/GauSeva/img7.jpg"
                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
