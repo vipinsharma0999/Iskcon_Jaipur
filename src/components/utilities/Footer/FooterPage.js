@@ -39,7 +39,7 @@ const socialMediaIcons = [
 const FooterPage = () => {
   return (
     <>
-      {/* <div className="bottom-0 bg-gradient-to-bl to-orange-400 from-black flex flex-col py-16">
+      <div className="bottom-0 bg-gradient-to-bl to-orange-400 from-black flex flex-col py-16">
         <div className="py-[20px] overflow-x-hidden">
           <Marquee
             className={`mb-[0px] text-[28px] text-[#ffffff] whitespace-no-wrap tracking-wide ${merri.className}`}
@@ -201,7 +201,7 @@ const FooterPage = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
