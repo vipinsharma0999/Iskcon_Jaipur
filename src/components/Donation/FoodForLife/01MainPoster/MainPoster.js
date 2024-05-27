@@ -104,7 +104,7 @@ const MainPoster = () => {
   return (
     <>
       <div className="bg-[url('/Donation/FoodForNeed/BannerforHome.jpg')] h-[100vh]   bg-cover bg-center w-full mt-[60px]">
-        <div className="absolute flex flex-col items-center w-full top-[60vh] justify-center">
+        <div className="absolute flex flex-col items-center w-full top-[30vh] justify-center">
           <h1
             className={`font-bold text-white text-6xl md:text-7xl text-center ${merri.className}`}
             style={{
@@ -114,6 +114,17 @@ const MainPoster = () => {
           >
             Food Relief
           </h1>
+          <h6
+            className={`mx-40 text-center leading-6 text-[22px] max-md:text-[20px] max-md:mx-10 z-10 text-white ${oswa.className}`}
+            style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)" }}
+          >
+            &quot;Join our food donation drive to fight hunger and provide
+            nourishing meals to those in need. Your support can make a world of
+            difference. Together, we can create meaningful change and bring hope
+            to our community. Let&apos;s come together and make a real
+            impact!&quot;
+          </h6>
+
           <button
             className={`relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% mt-3 font-bold text-[#ffffff] text-[20px] py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full overflow-hidden`}
             onMouseEnter={() => handleMouseEnter("button1")}
