@@ -2,7 +2,6 @@
 import React from "react";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
-
 import { Merriweather_Sans } from "next/font/google";
 import Link from "next/link";
 
@@ -14,7 +13,7 @@ const quickLinks = [
   { name: "Home", href: "/" },
   { name: "ISKCON Jaipur", href: "/iskcon-jaipur" },
   { name: "Srila Prabhupada", href: "/srila-prabhupada" },
-  { name: "Guset House", href: "/guest-house" },
+  { name: "Guest House", href: "/guest-house" },
   { name: "Govinda's", href: "/govindas" },
   { name: "Vrindavan Haat", href: "/vrindavan-haat" },
   { name: "Contact Us", href: "/contact" },
@@ -30,10 +29,9 @@ const donateLinks = [
 ];
 
 const socialMediaIcons = [
-  { src: "/Home/Hero/social_media_icons/instagram.svg", alt: "Instagram" },
-  { src: "/Home/Hero/social_media_icons/facebook.svg", alt: "Facebook" },
-  { src: "/Home/Hero/social_media_icons/youtube.svg", alt: "YouTube" },
-  { src: "/Home/Hero/social_media_icons/whatsapp.svg", alt: "WhatsApp" },
+  { src: "/Home/Hero/social_media_icons/instagram.svg", alt: "Instagram", href: "https://www.instagram.com/iskconjaipur.official/?igsh=MWRqbnl4M3o2ZXpucw%3D%3D" },
+  { src: "/Home/Hero/social_media_icons/youtube.svg", alt: "YouTube", href: "https://www.youtube.com/@iskcon_jaipur" },
+  { src: "/Home/Hero/social_media_icons/whatsapp.svg", alt: "WhatsApp", href: "https://wa.me/9649689649" },
 ];
 
 const FooterPage = () => {
@@ -188,12 +186,13 @@ const FooterPage = () => {
                 <div>
                   <div className="flex p-[14px] space-x-[20px]">
                     {socialMediaIcons.map((icon, index) => (
-                      <img
-                        key={index}
-                        src={icon.src}
-                        alt={icon.alt}
-                        className="cursor-pointer w-6 h-6"
-                      />
+                      <a key={index} href={icon.href} target="_blank" rel="noopener noreferrer">
+                        <img
+                          src={icon.src}
+                          alt={icon.alt}
+                          className="cursor-pointer w-6 h-6"
+                        />
+                      </a>
                     ))}
                   </div>
                 </div>

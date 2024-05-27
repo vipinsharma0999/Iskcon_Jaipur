@@ -114,8 +114,8 @@ const MainPoster = () => {
           >
             Food Relief
           </h1>
-          <h6
-            className={`mx-40 text-center leading-6 text-[22px] max-md:text-[20px] max-md:mx-10 z-10 text-white ${oswa.className}`}
+          <p
+            className={`mx-40 text-center leading-7 font-medium text-[20px] max-md:text-[20px] max-md:mx-10 z-10 text-white ${oswa.className}`}
             style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)" }}
           >
             &quot;Join our food donation drive to fight hunger and provide
@@ -123,7 +123,7 @@ const MainPoster = () => {
             difference. Together, we can create meaningful change and bring hope
             to our community. Let&apos;s come together and make a real
             impact!&quot;
-          </h6>
+          </p>
 
           <button
             className={`relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% mt-3 font-bold text-[#ffffff] text-[20px] py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full overflow-hidden`}
