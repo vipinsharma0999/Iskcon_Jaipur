@@ -56,10 +56,7 @@ export default function SadhuDonationSection() {
             <p
               className={`text-[20px] text-[#ffffff] text-justify ${merri.className}`}
             >
-              Sadhu Bhojdan means &quot;Donation to Sadhu.&quot; By donating,
-              you support devoted saints at ISKCON Mandir. These saints share
-              love and embody the Lord&apos;s compassion, bringing spiritual light to
-              many lives.
+              By contributing to Sadhu Bhojdan, you are supporting the dedicated saints at ISKCON Mandir. These revered individuals devote their lives to spreading love and embodying the Lord&apos;s compassion, offering spiritual guidance and enlightenment to countless people. Your donation helps sustain their vital mission, bringing divine wisdom and peace to many lives.
             </p>
           </div>
         </div>
