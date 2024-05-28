@@ -148,7 +148,7 @@ export default function TestimonialSection() {
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
                   It was a really great atmosphere for the family and the room
-                  was clean and a good place it's great and amazing experience
+                  was clean and a good place it&pos;s great and amazing experience
                   Really great opportunity to stay with Krishna temple geust
                   house.
                 </p>

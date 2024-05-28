@@ -118,11 +118,12 @@ const MainPoster = () => {
             className={`mx-40 text-center leading-7 font-medium text-[20px] max-md:text-[20px] max-md:mx-10 z-10 text-white ${oswa.className}`}
             style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)" }}
           >
-            &quot;Join our food donation drive to fight hunger and provide
-            nourishing meals to those in need. Your support can make a world of
-            difference. Together, we can create meaningful change and bring hope
-            to our community. Let&apos;s come together and make a real
-            impact!&quot;
+            &quot;Join our food donation drive and be a hero in the fight
+            against hunger! Your support can transform lives, providing
+            nutritious meals to those who need them most. Together, we can
+            create a brighter future and bring hope to our community. Let&apos;s come
+            together to make a powerful impact and change lives for the better!
+            &quot;
           </p>
 
           <button

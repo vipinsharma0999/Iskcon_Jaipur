@@ -80,14 +80,14 @@ const MainPoster = () => {
       <div className="mt-20 mx-3 text-center  text-[#000000] p-2">
         <h1>Welcome to ISKCON</h1>
       </div>
-      <div className=" mx-3 flex flex-col xl:flex-row flex-wrap">
-        <div className=" basis-1/4 flex justify-center items-center py-4">
+      <div className=" mx-3 flex flex-col">
+        <div className="  flex justify-center items-center py-4">
           <img
             className="max-xl:w-[176px] max-xl:h-[190px]  xl:w-[400px] xl:h-[365px]"
             src="/Donation/ExploreMore/new.png"
           ></img>
         </div>
-        <div className=" basis-9/12">
+
           <div className="flex justify-center items-center py-4">
             <p
               className={`font-bold text-[22px] max-[428px]:text-[16px] text-[#D9A55B] text-center ${playfair.className}`}
@@ -134,7 +134,7 @@ const MainPoster = () => {
               or philanthropy.
             </p>
           </div> */}
-        </div>
+        
       </div>
 
       <div className="bg-[#f9f9f9]">

@@ -85,6 +85,9 @@ const MainSectionPujaSeva = () => {
 
   return (
     <>
+      
+
+
       <div className="bg-[url('/Donation/PujaSeva/puja.jpg')] h-[100vh] bg-cover bg-center w-full mt-[40px]">
         <div className="absolute flex flex-col items-center w-full top-[25vh] sm:top-[45vh] justify-center">
           <h1
@@ -92,6 +95,8 @@ const MainSectionPujaSeva = () => {
             style={{
               textShadow:
                 "2px 2px black, 20px 20px 50px #d17a29, -20px -20px 50px #d17a29, -20px 20px 50px #d17a29, 20px -20px 50px black",
+              padding: "10px", // Add padding for better readability
+              borderRadius: "10px", // Optional: Add rounded corners
             }}
           >
             Puja Seva
@@ -99,7 +104,12 @@ const MainSectionPujaSeva = () => {
           <div className="xl:px-64 px-10 pb-3">
             <p
               className={`text-center text-[20px] font-medium text-[#ffffff] ${playfair.className}`}
-              style={{ textShadow: "6px 6px 12px rgba(0, 0, 0, 0.9)" }}
+              style={{
+                textShadow: "6px 6px 12px rgba(0, 0, 0, 0.9)",
+                backgroundColor: "rgba(0, 0, 0, 0.3)", // Add semi-transparent background
+                padding: "10px", // Add padding for better readability
+                borderRadius: "10px", // Optional: Add rounded corners
+              }}
             >
               <strong>
                 Our world abounds with the boundless mercy and kindness of Lord
