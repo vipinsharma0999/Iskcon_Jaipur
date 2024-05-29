@@ -9,7 +9,7 @@ import {
   Merriweather_Sans,
 } from "next/font/google";
 import SadhuPaymentSection from "../../SadhuSeva/04SadhuPaymentSection/SadhuPaymentSection";
-import GauSevaPaymentSection from "../03GauSevaPaymentSectoin.js/GauSevaPaymentSection";
+import GauSevaPaymentSection from "../03GauSevaPaymentSection/GauSevaPaymentSection";
 import CowCarousel from "../02Carousel/CowCarousel";
 import AdoptCow from "../04AdoptCow/AdoptCow";
 import GauSeva from "@/app/(donation)/gau-seva/page";
